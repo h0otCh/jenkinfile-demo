@@ -14,6 +14,7 @@ public class HelloController {
 	public ResponseEntity<Hello> greeting(@PathVariable String name) {
 		Hello hello = new Hello();
 		hello.setRidiculous(name);
+		hello.setMoreHello(name);
 		return new ResponseEntity<>(hello, HttpStatus.OK);
 	}
 }
