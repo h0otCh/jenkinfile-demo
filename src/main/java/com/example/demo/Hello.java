@@ -1,16 +1,16 @@
 package com.example.demo;
 
 public class Hello {
-	private String answer;
+	private String ridiculous;
 
 	public Hello() {
 	}
 
-	public String getAnswer() {
-		return answer;
+	public String getRidiculous() {
+		return ridiculous;
 	}
 
-	public void setAnswer(String answer) {
-		this.answer = answer;
+	public void setRidiculous(String ridiculous) {
+		this.ridiculous = ridiculous;
 	}
 }
