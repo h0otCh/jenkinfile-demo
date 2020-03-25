@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Archive') {
         	steps {
-        		archiveArtifacts artifcats: '**/build/libs/*.jar', fingerprint: true
+        		archiveArtifacts artifacts: '**/build/libs/*.jar', fingerprint: true
         	}
         }
 	}
