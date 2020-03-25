@@ -1,10 +1,12 @@
 pipeline {
 	agent any
 
-	stages('Build') {
-		sh './gradlew build'
-	}
-	stages('Archive') {
-		archiveArtifacts artifcats: '**/build/libs/*.jar', fingerprint: true
+	stages {
+		stage('Build') {
+        	sh './gradlew build'
+        }
+        stage('Archive') {
+        	archiveArtifacts artifcats: '**/build/libs/*.jar', fingerprint: true
+        }
 	}
 }
