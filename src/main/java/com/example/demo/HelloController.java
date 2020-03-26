@@ -17,4 +17,9 @@ public class HelloController {
 		hello.setMoreHello(name);
 		return new ResponseEntity<>(hello, HttpStatus.OK);
 	}
+
+	@GetMapping(value = "hello/nope", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Hello> greetNope() {
+		return new ResponseEntity<>(new Hello(), HttpStatus.OK);
+	}
 }
